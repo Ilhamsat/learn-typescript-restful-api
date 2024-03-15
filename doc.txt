@@ -1,0 +1,56 @@
+//For Validation use Zod
+npm install zod
+
+//For web-framework use Express.js
+npm install express
+//For autocomplete in TypeScript
+npm install --save-dev @types/express
+
+//For Objet Relational Mapping use Prisma
+npm install --save-dev prisma
+
+//For Logging use Winston
+npm install winston
+
+//For Hashing Data Password use package BCrypt
+npm install bcrypt
+//For autocomplete in TypeScript
+npm install --save-dev @types/bcrypt
+
+//For Generate UUID use UUID
+npm install uuid
+//For autocomplete in TypeScript
+npm install --save-dev @types/uuid
+
+//For Unit Test use Library Jest
+npm install --save-dev @types/jest
+
+//For compilation so that Jest support JavaScript module use Babel
+npm install --save-dev babel-jest @babel/preset-env
+//Documentation setup babel for jest
+https://babeljs.io/setup#installation
+
+//For typescript so typescript will support for Jest
+npm install --save-dev @babel/preset-typescript
+npm install --save-dev @jest/globals
+//Documentation setup
+https://jestjs.io/docs/getting-started#using-typescript
+
+//
+npm install --save-dev supertest @types/supertest
+
+//
+npm install --save-dev typescript
+
+
+//Setup for Typescript Project
+npx tsc --init
+
+
+- Make sure "module" in tsconfig.json is "commonjs"
+- Make sure "moduleResolution" in tsconfig.json is "Node" beacuse we use TypeScript for NodeJS
+- Add above "compilerOptions" in tsconfig.json :
+"include": [
+    "src/**/*"
+  ],
+- Change location "outDir" from "./" to "./dist" in tsconfig.json
